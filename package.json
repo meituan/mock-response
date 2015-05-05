@@ -1,0 +1,31 @@
+{
+  "name": "mock-response",
+  "description": "Response renderer",
+  "repository": "meituan/mock-response",
+  "version": "3.2.2",
+  "keywords": [
+    "mock"
+  ],
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "devDependencies": {
+    "istanbul": "0",
+    "mocha": "1",
+    "should": "*"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mock-generator": "^1.0.0",
+    "debug": "*",
+    "handlebars": "^2.0.0",
+    "lodash": "^2.4.1"
+  },
+  "scripts": {
+    "debug": "./node_modules/.bin/mocha --debug-brk --require should test",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  }
+}

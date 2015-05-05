@@ -1,0 +1,10 @@
+{
+    "a": [{
+        "b": "hello"
+    }, {
+        "c": "world"
+    }],
+    "random|2-4": [{
+        "hello": "world"
+    }]
+}

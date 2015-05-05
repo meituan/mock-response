@@ -1,0 +1,6 @@
+{
+    "mixin": ["base.json", "head.json"],
+    "body": {
+        "child": "child"
+    }
+}

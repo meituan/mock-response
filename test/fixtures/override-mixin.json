@@ -1,0 +1,6 @@
+{
+    "mixin": "base.json",
+    "body": {
+        "base": "not base"
+    }
+}
